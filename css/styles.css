@@ -1,0 +1,114 @@
+body{
+	background-color: white;
+	margin: 0;
+	min-width: 700px;
+}
+.menu{
+	border: 1px solid black;
+	margin: 0 auto;
+	background: linear-gradient(to right, rgba(30,87,153,1) 0%,rgba(30,87,153,1) 50%,rgba(229,229,229,1) 63%,rgba(198,216,230,1) 74%,rgba(125,185,232,0.55) 100%);
+	/*background: linear-gradient(45deg, rgba(10,8,43,1) 0%,rgba(81,118,160,1) 62%,rgba(95,139,183,0.7) 74%,rgba(125,185,232,0) 100%);*/
+}
+.menu ul li{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 20px;
+}
+.menu ul li A{
+	font-size: 15pt;
+	font-family: Arial;
+}
+.logo{
+	width: 200px;
+	height: 50px;
+}
+.login{
+	float: right;
+	margin-left: 30px;
+}
+.login A img{
+	width: 150px;
+	height: 60px;
+}
+
+.content{
+	min-width: 700px;
+	width: 1200px;
+	/*min-height: 300px;*/
+
+	margin: 0 auto;
+}
+
+.nav-bar{
+	padding-top: 15px;
+	padding-left: 55px;
+}
+.repertoire{
+	padding: 0, 15px, 0px;
+	text-align: center;
+}
+.repertoire ul li:nth-last-child(-n+4) {
+  .repertoire{
+  	text-align: left;
+  }
+}
+.list-repertoire li{
+	display: inline-block;
+	width: 140px;
+	height: 270px;
+	padding-left: 7px;
+	padding-right: 7px;
+	border:1px solid black;
+	box-shadow: 0 0 40px rgba(0,0,0,0.5);
+	margin: 5px;
+}
+.list-repertoire li p{
+	text-align: center;
+	/*padding-right: 10px;*/
+	height: 30px;
+}
+A {
+color: blue; /* Цвет ссылок */
+}
+A:visited {
+color: blue; /* Цвет посещенных ссылок */
+}
+A:active {
+color: blue; /* Цвет активных ссылок */
+}
+@media screen and (max-width:1200px){
+	.content{
+		width: 950px;
+	}
+}
+@media screen and (max-width:950px){
+	.content{
+		width: 800px;
+	}
+}
+@media screen and (max-width:800px){
+	.content{
+		width: 700px;
+	}
+}
+@media screen and (max-width:600px){
+	.content{
+		width: 450px;
+	}
+}
+.footer {
+	border: 1px solid black;
+}
+.leftstr, .rightstr {
+color: gray;
+font-family: Arial;
+/*padding-left: 60px;*/
+font-style: italic;
+float: left; 
+width: 50%; 
+margin: 5px 0px 0px 0px;
+padding: 10px, 0px, 0px, 10px;
+}
+.rightstr {
+text-align: right; 
+}
