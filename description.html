@@ -7,15 +7,16 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-	<div class="menu">
+	<script type="text/javascript" src="js/script.js"></script>
+	<header class="menu">
 		<ul>
 			<li><a href="index.html"><img class="logo" src="img/logo.gif"></a></li>
 			<li><a href="index.html">Афіша</a></li>
 			<li><a href="#">Мої квитки</a></li>
-			<li class="login"><a href="#"><img src="img/login.png"/></a></li>
+			<li class="login"><a href="#" onclick="modularpattern.logshow('block')"><img src="img/login.png"/></a></li>
 		</ul>
 		
-	</div>
+	</header>
 	<section class="content">
 		<div class="list-content">
 			<div class="image"><img src="bigLogo/1.png"></div>
@@ -24,16 +25,18 @@
 			<h1>Розлом Сан-Андреас</h1>
 			<h4>San Andreas	(оригінальна назва)</h5>
 			<p>Тривалість:107 хв<br>
-			Жанр:бойовик, трилер, драма<br>
-			Обмеження за віком:14+</p>
+			Жанр: бойовик, трилер, драма<br>
+			Обмеження за віком: 14+</p>
 			<p>Рей - пілот рятувального гелікоптера, який все своє життя допомагав іншим людям. За весь час роботи він надивився на безліч моторошних речей і не раз опинявся в дуже складних ситуаціях. Незважаючи на всі перепони він поспішав на допомогу, навіть не припускаючи, що найстрашніше чекає його попереду.
 			На Каліфорнію обрушується потужний землетрус, в результаті якого гинуть сотні людей і утворюється величезна тріщина в землі. У загальному хаосі Рею належить відшукати свою дочку, але зробити це буде дуже непросто. У надії, що його дитина все ще жива, він відправляється в смертельно небезпечну подорож через весь штат...</p>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/aNAWKVoyX9o" frameborder="0" allowfullscreen></iframe>
+
 			<h2>Розклад</h2>
 			<div class="schedule">
 				<ul>
 					<li><p>31 травня, сьогодні</p></li>
 					<li>
-						<a href="#">
+						<a href="#" onclick="modularpattern.show('block')">
 							<time>19:00</time>
 						</a>
 					</li>
@@ -115,9 +118,134 @@
 			</div>
 		</div>
 	</section>
-</body>
 
-<footer>
+	<div id="wrap" class="wrap" >
+		<div  id="window" class="testDiv window">
+			<img class="close" onclick="modularpattern.show('none')" src="img/close.png">
+			<center>
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+				<li>0</li>
+			</ul>
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+				<li>0</li>
+			</ul>
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+				<li>0</li>
+			</ul>
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+				<li>0</li>
+			</ul>
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+				<li>0</li>
+			</ul>
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+				<li>0</li>
+			</ul>
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+				<li>0</li>
+			</ul>
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+				<li>0</li>
+			</ul>
+			<button>Купити квитки</button>
+			</center>
+		</div>
+	</div>
+
+	<div id="log-wrap" class="wrap" >
+		<div  id="log-window" class="testDiv window">
+			<img class="close" onclick="modularpattern.logshow('none')" src="img/close.png">
+			
+				<table width="100%" cellspacing="0" cellpadding="4">
+			    <tr> 
+			     <td align="right" width="100">Login</td>
+			     <td align="center"><input class="login" type="email"></input></td>
+			    </tr>
+			    <tr> 
+			     <td align="right">Password</td>
+			     <td align="center"><input class="login" type="password"></input></td>
+			    </tr>
+			    <tr>
+			    	<td text-align="center"><button>Login</button></td>
+			    </tr>
+			   </table>
+			
+		</div>
+	</div>
+
+	<footer>
 	<section class="content footer">
     <p class="leftstr">© 2015 Platinum Cinema</p> 
     <p class="rightstr">All right reserved</p> 
@@ -125,4 +253,5 @@
     <p class="rightstr">Made by Ted</p> 
 	</section>
 </footer>
+</body>
 </html>

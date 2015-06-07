@@ -34,3 +34,34 @@
 .schedule ul li p:first-child{
 	color: green;
 }
+.testDiv{
+	width: 600px;
+	height: 500px;
+	left:50%;
+	top: 50%;
+	margin: -300px 0 0 -250px;
+	background-color: #eaeaea;
+	border: 1px solid black;
+	display: none;
+	position: absolute;
+	z-index: 100;
+}
+.testDiv ul{
+	margin: 0px auto;
+	padding: 0;
+}
+.testDiv ul li{
+	width: 20px;
+	height: 20px;
+	margin: 4px;
+	background-color: green;
+	display: inline-block;
+	list-style-type: none;
+	text-align: center;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.testDiv ul li:hover{
+	background-color: gold;
+}
